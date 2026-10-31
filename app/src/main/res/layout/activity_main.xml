@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent"
+ android:background="@color/bg" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  android:orientation="vertical" android:padding="22dp">
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+   android:text="CHORD FOLLOW" android:textColor="@color/text_primary"
+   android:textSize="24sp" android:textStyle="bold"/>
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+   android:text="נגן. הקשב. התקדם." android:textColor="@color/text_secondary" android:textSize="14sp"/>
+  <TextView android:id="@+id/statusView" android:layout_width="match_parent" android:layout_height="wrap_content"
+   android:layout_marginTop="24dp" android:padding="16dp" android:background="@drawable/panel_bg"
+   android:text="המקלדת לא מחוברת · USB MIDI" android:textColor="@color/accent2" android:textSize="14sp"/>
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+   android:layout_marginTop="28dp" android:text="האקורד הנוכחי" android:textColor="@color/text_secondary"/>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="230dp"
+   android:layout_marginTop="10dp" android:background="@drawable/panel_bg"
+   android:gravity="center" android:orientation="vertical">
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="PLAY THIS CHORD" android:textColor="@color/accent2" android:textStyle="bold"/>
+   <TextView android:id="@+id/currentChordView" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:gravity="center" android:text="—"
+    android:textColor="@color/text_primary" android:textSize="76sp" android:textStyle="bold"/>
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="נגן את כל צלילי האקורד כדי להמשיך" android:textColor="@color/text_secondary"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+   android:layout_marginTop="14dp" android:padding="16dp" android:background="@drawable/panel_bg"
+   android:orientation="vertical">
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="הבא בתור" android:textColor="@color/text_secondary"/>
+   <TextView android:id="@+id/nextChordView" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:text="טען שיר כדי להתחיל"
+    android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold"/>
+  </LinearLayout>
+  <Button android:id="@+id/importPdfButton" android:layout_width="match_parent"
+   android:layout_height="56dp" android:layout_marginTop="20dp" android:text="ייבוא קובץ PDF"/>
+  <Button android:id="@+id/pasteTextButton" android:layout_width="match_parent"
+   android:layout_height="56dp" android:layout_marginTop="10dp" android:text="הדבקת אקורדים"/>
+  <Button android:id="@+id/modeButton" android:layout_width="match_parent"
+   android:layout_height="56dp" android:layout_marginTop="10dp" android:text="מצב פשוט · Simple"/>
+ </LinearLayout>
+</ScrollView>
